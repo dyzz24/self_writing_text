@@ -58,7 +58,7 @@ function (_HTMLElement) {
       mode: 'open'
     }); // shadowroot
 
-    _this.shadow.innerHTML = "\n      <style>\n\n\n    .added_span {\n        color: white;\n        display: flex;\n        overflow: hidden;\n        user-select: none;\n    }\n    .add_span, .line {\n        font-size: 18px;\n        \n    }\n\n    .line {\n        animation: anim_span .6s linear infinite alternate;\n    }\n    @keyframes anim_span {\n        from {\n            opacity: 0;\n        }\n        to {\n            opacity: 1;\n        }\n    }\n\n      </style>\n      <p class='added_span'><span class='line anim_span'>|</span></p>\n    ";
+    _this.shadow.innerHTML = "\n      <style>\n\n\n    .added_span {\n        color: white;\n        display: flex;\n        overflow: hidden;\n        user-select: none;\n    }\n    .add_span, .line {\n        font-size: 18px;\n  margin-right: 6px;\n       \n    }\n\n    .line {\n        animation: anim_span .6s linear infinite alternate;\n    }\n    @keyframes anim_span {\n        from {\n            opacity: 0;\n        }\n        to {\n            opacity: 1;\n        }\n    }\n\n      </style>\n      <p class='added_span'><span class='line anim_span'>|</span></p>\n    ";
 
     _this.self.write_text(_this.strings_array); // вызываем ф-ю печати текста
 
