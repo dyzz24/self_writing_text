@@ -34,6 +34,7 @@ class SelfWritingText extends HTMLElement {
     }
     .add_span, .line {
         font-size: 18px;
+         margin-right: 6px
         
     }
 
